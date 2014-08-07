@@ -1,0 +1,51 @@
+
+.funnyText .charWrap {
+    transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;/** Chrome & Safari **/
+    -moz-transition: all 0.4s ease-in-out;/** Firefox **/
+    -o-transition: all 0.4s ease-in-out;/** Opera **/
+}
+
+
+
+
+@-webkit-keyframes pulse  
+{
+ 0% {background-color: rgba(22, 160, 133,1.0);} 
+ 25% {background-color:rgba(39, 174, 96,1.0);}
+ 50% {background-color: rgba(41, 128, 185,1.0);} 
+ 75% {background-color:rgba(231, 76, 60,1.0);}
+ 100% {background-color:rgba(44, 62, 80,1.0);}
+}
+@-moz-keyframes pulse  
+{
+ 0% {background-color: rgba(22, 160, 133,1.0);} 
+ 25% {background-color:rgba(39, 174, 96,1.0);}
+ 50% {background-color:rgba(41, 128, 185,1.0);}
+ 75% {background-color:rgba(231, 76, 60,1.0);}
+ 100% {background-color:rgba(44, 62, 80,1.0);}
+}
+
+
+@-ms-keyframes pulse  
+{
+ 0% {background-color: rgba(22, 160, 133,1.0);} 
+ 25% {background-color:rgba(39, 174, 96,1.0);}
+ 50% {background-color:rgba(41, 128, 185,1.0);} 
+ 75% {background-color:rgba(231, 76, 60,1.0);}
+ 100% {background-color:rgba(44, 62, 80,1.0);}
+ }
+
+
+.aboutus.active, .wrap_top.active, .services.active, .contact.active {
+    transform: perspective(896px) rotateY(0deg);
+    transition: all 0.5s ease-in 0s;
+}
+
+.aboutus, .services, .wrap_top, .contact {
+    backface-visibility: visible;
+    min-height: 700px;
+    transform: perspective(1000px) rotateY(50deg);
+    transform-origin: 0 50% 0;
+    transition: all 0.5s ease-out 0s;
+}
